@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+	{%include "head.html"%}
+<body>
+	{%include "navbar.html"%}
+    <form method="POST" action="/submit_datas">
+        <h2>Client information's</h2>
+        <label for="vehicle_id">Vehicle ID:</label>
+        <input type="text" id="vehicle_id" name="vehicle_id" required><br><br>
+        <label for="item">Item:</label>
+        <input type="text" id="item" name="item" required><br><br>
+        <label for="client">Client:</label>
+        <input type="text" id="client" name="client" required><br><br>
+
+        <h2>Weight information's</h2>
+        <label for="load_weight">Load Weight:</label>
+        <input type="number" id="load_weight" name="load_weight" value="0" required><br><br>
+        <label for="unload_weight">Unload Weight:</label>
+        <input type="number" id="unload_weight" name="unload_weight" value="0" required><br><br>
+        <label for="deduct">Deduct:</label>
+        <input type="number" id="deduct" name="deduct"  value="0"><br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
