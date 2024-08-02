@@ -1,4 +1,4 @@
-#!/bin/python
+#!venv/bin/python
 
 import os
 from flask import Flask,request,render_template,redirect,send_file
